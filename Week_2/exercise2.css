@@ -1,0 +1,50 @@
+body {
+  color: #42413b;
+  line-height: 1.57;
+  width: 824px;
+  margin: 40px auto;
+}
+.title {
+  width: 400px;
+  margin: 40px auto;
+  padding-right: 8px;
+  height: 582px;
+  float: left;
+  position: relative;
+}
+.title_body {
+  width: 400px;
+  padding-left: 8px;
+  height: 582px;
+  float: right;
+  position: relative;
+}
+#cat_pic {
+  width: 408px;
+  float: right;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+#pic0 {
+  position: absolute;
+  bottom: 0;
+}
+#pic1,
+#pic2,
+#pic3 {
+  float: left;
+}
+#pic1 {
+  margin-right: 8px;
+}
+#pic4,
+#pic5,
+#pic6 {
+  float: right;
+}
+#footer {
+  clear: both;
+  margin-top: 16px;
+  border-top: 1px solid;
+  padding: 12px 0;
+}
