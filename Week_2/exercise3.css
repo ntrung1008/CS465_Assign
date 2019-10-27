@@ -1,17 +1,28 @@
 body {
   font-size: 25px;
   background-color: aquamarine;
-  text-align: center;
 }
-#Name {
+#Name{
+  font-family: "Open Sans";
+  font-style: normal;
   background-color: black;
   color: white;
 }
+#About{
+  width: 400px;
+  height: 400px;
+  bottom: 500px;
+}
 #Pic1 {
-  max-width: 10%;
+  max-width: 60%;
   height: auto;
 }
-#Port,
-#Projects {
+#Port {
+  position: relative;
   text-align: center;
+  bottom: 400px;
+  left: 400px;
+}
+#P1:hover,#P2:hover{
+  color: brown;
 }
