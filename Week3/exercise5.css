@@ -1,0 +1,36 @@
+div {
+  color: white;
+  background-color: gray;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: left;
+}
+#box1 {
+  width: 1010px;
+  height: 100px;
+}
+#box2 {
+  clear: left;
+  width: 500px;
+  height: 200px;
+}
+#box3 {
+  width: 500px;
+  height: 100px;
+}
+#box4 {
+  clear: left;
+  width: 240px;
+  height: 90px;
+  position: fixed;
+  left: 520px;
+  top: 230px;
+}
+#box5 {
+  clear: left;
+  width: 250px;
+  height: 90px;
+  position: fixed;
+  left: 770px;
+  top: 230px;
+}
