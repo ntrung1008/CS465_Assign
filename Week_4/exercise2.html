@@ -15,9 +15,14 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
     ></script>
     <script type="text/javascript">
+    function reverse_a_number(n)
+    {
+	    n = n + "";
+	    return n.split("").reverse().join("");
+    }
       $("#submit").on("click", function() {
         var x = $("#number_input").val();
-        x = x.reverse();
+        x = reverse_a_number(x);
         $("#submit").val(x);
       });
     </script>

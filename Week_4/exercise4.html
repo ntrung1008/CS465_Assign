@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  ></script>
+    <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body >
+      <div><input type ="text" id ="width" value= "Resize to see width"></div>
+      <div><input type ="text" id ="height" value= "Resize to see height"></div>
+  </form>
+    <!-- SCRIPt -->
+    <script type="text/javascript">
+        $( window ).resize(function() {
+            var width = $(window).width();
+            var height = $(window).height();
+            console.log(width);
+            $('#width').val(width);
+            $('#height').val(height);
+        });
+      </script>
+  </body>
+</html>

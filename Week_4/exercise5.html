@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  ></script>
+    <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body >
+      <button id="Change">Click to change background color</button>
+  </form>
+    <!-- SCRIPt -->
+    <script type="text/javascript">
+        function getRandomColor() 
+        {
+            var letters = '0123456789ABCDEF';
+         var color = '#';
+         for (var i = 0; i < 6; i++) 
+         {
+            color += letters[Math.floor(Math.random() * 16)];
+         }
+         return color;
+        }
+        $("#Change").on("click", function() {
+          var random= getRandomColor(); 
+          $('body').css(
+            {
+                'background-color': random
+            }
+          )
+        });
+      </script>
+  </body>
+</html>
