@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+  ></script>
+    <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body >
+    <div>
+      <h1 class ="text-center">CONTACT US</h1>
+      <form action ="/submit" method = "post">
+          <div class="form-group">
+              <label for="Name">Name</label>
+              <input type="text" class="form-control" id="Name">
+            </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="Email" >
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Comments</label>
+        <textarea class="form-control" id="Comment" rows="5"></textarea>
+      </div>
+      <section>
+        <button type="button" id= "Sub" class="btn btn-primary">Submit</button>
+        <button type="reset" id= "Reset"class="btn btn-secondary">Reset</button>
+      </section>
+    </div>
+  </form>
+   
+  </body>
+</html>
