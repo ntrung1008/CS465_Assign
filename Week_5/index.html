@@ -34,6 +34,23 @@
       </section>
     </div>
   </form>
-   
+   <!-- SCRIPt -->
+   <script type="text/javascript">
+    $("#Sub").on("click", function() {
+      var x = $("#Name").val();
+      var y = $("#Email").val();
+      var z = $("#Comment").val();
+      
+      var send = {x,y,z};
+      var sendString = JSON.stringify(send);
+      //alert(sendString);
+      //xhttp.send(send);
+
+    });
+    //$("#Reset").on("click", function() {
+    
+    //});
+
+  </script>
   </body>
 </html>
