@@ -3,17 +3,16 @@ var bodyParser=require("body-parser");
 
 const server = express();
 
-server.use(bodyParser.urlencoded({extended: true}))
+server.use(bodyParser.urlencoded({extended: false}))
 server.use(bodyParser.json());
 
 
-server.use(express.static('Week_5'));
 
 server.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
   }); 
 
-server.post('/', function(req, res){
+server.post('/post', function(req, res){
    console.log(req.body);
    res.end();}
 );
