@@ -7,19 +7,30 @@
     <title>Document</title>
     <link rel="stylesheet"type="text/css"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
     <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+      .col{
+        border:solid white;
+      }
+      .row{
+        margin:10px;
+      }
+      .row2-3{
+        padding-bottom: 200px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container text-white bg-secondary ">
+    <div class="container text-white ">
       <div class="row ">
-        <div class="col">One</div>
+        <div class="col  bg-secondary">One</div>
       </div>
-      <div class="row pb-5 ">
-        <div class="col-3">Two</div>
-        <div class="col">Three</div>
+      <div class="row row2-3 bg-secondary">
+        <div class="col-2 ">Two</div>
+        <div class="col-10 ">Three</div>
       </div>
       <div class="row">
-            <div class="col">Four</div>
-          </div>
+            <div class="col  bg-secondary">Four</div>
+      </div>
     </div>
   </body>
 </html>
