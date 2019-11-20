@@ -12,8 +12,10 @@ server.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
   }); 
 
-server.post('/post', function(req, res){
-   console.log(req.body);
+server.post('/submit', function(req, res){
+    res.write("First name: "+req.body.fname+ '\n');
+    res.write("Last namee: "+req.body.lname+ '\n');
+    res.write("Comment: "+req.body.Comment);
    res.end();}
 );
 

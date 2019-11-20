@@ -13,54 +13,12 @@
     <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </head>
   <body >
-    <div>
-      <h1 class ="text-center">CONTACT US</h1>
-      <form action ="/submit" method = "post">
-          <div class="form-group">
-              <label for="Name">Name</label>
-              <input type="text" class="form-control" id="Name">
-            </div>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="Email" >
-      </div>
-      <div class="form-group">
-        <label for="exampleFormControlTextarea1">Comments</label>
-        <textarea class="form-control" id="Comment" rows="5"></textarea>
-      </div>
-      <section>
-        <button type="button" id= "Sub" class="btn btn-primary">Submit</button>
-        <button type="reset" id= "Reset"class="btn btn-secondary">Reset</button>
-      </section>
-    </div>
-  </form>
-   <!-- SCRIPt -->
-   <script type="text/javascript">
-    $("#Sub").on("click", function() {
-      var x = $("#Name").val();
-      var y = $("#Email").val();
-      var z = $("#Comment").val();
-      
-      var send = {x,y,z};
-      var myRequest = new XMLHttpRequest();
-      myRequest.open('POST',send);
-      myRequest.onreadystatechange = function ()
-      {
-         if (myRequest.readyState ===4)
-         {
-           if(req.status ===200)
-           {
-             console.log(myRequest.responseText);
-           }
-         }
-      }
-      myRequest.send();
-
-    });
-    //$("#Reset").on("click", function() {
-    
-    //});
-
-  </script>
+    <form action="/submit" method="post">
+      First name: <input type="text" name="fname" id="fname"><br>
+      Last name: <input type="text" name="lname" id="lname"><br>
+      Comment: <input type="text" name="Comment" id="comment"><br>
+      <input type="submit" value="Submit">
+    </form>
+   
   </body>
 </html>
